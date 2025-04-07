@@ -1,14 +1,14 @@
 # Environmental AQI Insights
 
 ## Overview
-**Environmental AQI Insights** is a Power BI dashboard project that visualizes global air quality data (AQI) with a focus on PM2.5 levels, integrating Azure as the backend for data processing and storage. This project provides valuable insights into the global air quality situation by leveraging Power BI’s interactive visualizations and Azure’s cloud computing services for seamless data management.
+**Environmental AQI Insights** is a Power BI dashboard project that visualizes global air quality data (AQI) with a focus on PM2.5 levels. The dashboard offers insights into the global air quality situation by leveraging Power BI’s interactive visualizations and Azure’s cloud computing services for seamless data management.
 
 The dashboard explores the distribution of AQI categories by country and offers analysis of the environmental impact across various regions. By analyzing AQI data, this project aims to raise awareness about air pollution levels worldwide and offer actionable insights that could benefit policy makers, environmentalists, and citizens alike.
 
 ## Key Features
 - **Data Visualization**: Interactive charts and maps that visualize the distribution of PM2.5 AQI data across the globe.
 - **AQI Categories**: Includes AQI levels such as `Good`, `Moderate`, `Unhealthy`, `Hazardous`, and `Very Unhealthy`, categorized based on PM2.5 levels.
-- **Azure Integration**: The data is processed and stored on Azure, ensuring scalability, security, and seamless access for Power BI.
+- **Azure Integration**: The data is processed and stored on **Azure**, ensuring scalability, security, and seamless access for Power BI.
 - **Data Filtering**: The report includes slicers to filter data by country, AQI category, and other relevant parameters.
 - **Regional Insights**: Provides regional comparisons for AQI levels, showing which areas have the most hazardous pollution.
 
@@ -34,10 +34,17 @@ Global air quality is a significant concern, and this project offers a solution 
 - **Regional Comparison**: Users can compare AQI levels across different regions, helping to identify areas where pollution control efforts are working and where improvements are needed.
 - **Public Awareness**: By presenting the data in an interactive format, the dashboard makes it easier for the public to understand the impact of pollution on their health and environment, fostering a proactive approach to air quality improvement.
 
+## Dataset Access
+The dataset used in this project can be accessed through the following link:
+
+- [Download AQI Dataset](https://tejasalesdata.blob.core.windows.net/rawdata/global%20air%20pollution%20dataset.csv)
+
+> **Note**: The dataset is hosted on **Azure Blob Storage** for ease of access and large file handling.
+
 ## How to Run the Report
-1. **Open the Power BI Report**: Open the `Environmental AQI Insights.pbix` file using Power BI Desktop.
-2. **Ensure Azure Integration**: Make sure that the Azure backend is connected to Power BI for real-time data access.
-3. **Explore the Data**: Use slicers and interactive charts to filter and explore the AQI data by country, AQI category, and other parameters.
+1. Open the `.pbix` file in **Power BI Desktop**.
+2. Ensure that the Azure backend is connected to Power BI for real-time data access.
+3. Explore the interactive visuals for pollution insights by using the slicers.
 
 ## How to Contribute
 - **Suggestions**: If you have suggestions for improving this project, feel free to open an issue or contribute via a pull request.
@@ -49,11 +56,8 @@ Global air quality is a significant concern, and this project offers a solution 
 - **Azure**: Backend infrastructure for data storage and processing.
 
 ## License
-This project is licensed under the MIT License. Feel free to fork or modify the project as needed.
+This project is open-source. Feel free to fork or modify it as needed.
 
 ## Contact
 - **LinkedIn**: [Krishna Teja Reddy Kotla](https://www.linkedin.com/in/krishnatejakotla)
 - **Email**: [krishnatejareddy.kotla@gmail.com]
-
-
-
