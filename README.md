@@ -1,63 +1,58 @@
-# Environmental AQI Insights
+# Environmental-AQI-Insights
 
 ## Overview
-**Environmental AQI Insights** is a Power BI dashboard project that visualizes global air quality data (AQI) with a focus on PM2.5 levels. The dashboard offers insights into the global air quality situation by leveraging Power BI’s interactive visualizations and Azure’s cloud computing services for seamless data management.
 
-The dashboard explores the distribution of AQI categories by country and offers analysis of the environmental impact across various regions. By analyzing AQI data, this project aims to raise awareness about air pollution levels worldwide and offer actionable insights that could benefit policy makers, environmentalists, and citizens alike.
+Environmental-AQI-Insights is a Power BI dashboard for analyzing global air quality data (AQI). This project leverages Power BI’s interactive visualizations to provide insights into the global PM2.5 AQI levels and their distribution across various countries. The data is processed using **Azure** services, ensuring robust scalability and data management.
+
+The dashboard offers key insights into:
+- AQI Category distributions
+- Regional AQI levels
+- Analysis of global pollution trends by country
+
+## Dataset
+
+The dataset used for this project is the **Global Air Pollution Dataset** that contains pollution data for multiple countries. The data is stored on **Azure Blob Storage**.
+
+Dataset link: [Global Air Pollution Dataset](https://tejasalesdata.blob.core.windows.net/rawdata/global%20air%20pollution%20dataset.csv)
+
+## Azure Integration
+
+The data for this project is hosted on **Azure Blob Storage**, and the processing involves leveraging Azure tools to ensure smooth data flow and integration with Power BI.
+
+1. **Azure Storage Account**: The data is stored in an Azure Blob Storage container called **rawdata**. This container is set to allow public access, making it easily accessible for integration with Power BI.
+2. **Azure Data Factory**: Azure Data Factory was used to manage and prepare the data for Power BI. It facilitated the process of data extraction, transformation, and loading (ETL) to ensure high-quality, cleaned data.
+3. **Power BI**: The dashboard was created using Power BI Desktop, with interactive visualizations to highlight key trends in the AQI data across different countries.
 
 ## Key Features
-- **Data Visualization**: Interactive charts and maps that visualize the distribution of PM2.5 AQI data across the globe.
-- **AQI Categories**: Includes AQI levels such as `Good`, `Moderate`, `Unhealthy`, `Hazardous`, and `Very Unhealthy`, categorized based on PM2.5 levels.
-- **Azure Integration**: The data is processed and stored on **Azure**, ensuring scalability, security, and seamless access for Power BI.
-- **Data Filtering**: The report includes slicers to filter data by country, AQI category, and other relevant parameters.
-- **Regional Insights**: Provides regional comparisons for AQI levels, showing which areas have the most hazardous pollution.
 
-## Technologies Used
-- **Power BI**: Used to create the interactive dashboards and visualizations. Power BI integrates with the Azure backend for live data processing and visualization.
-- **Azure**: Used to store and process AQI data. This Azure backend is designed to manage large datasets and provide seamless integration with Power BI.
-- **PM2.5 AQI Dataset**: A comprehensive dataset containing PM2.5 AQI readings from various global monitoring systems.
+- **AQI Categories**: Includes AQI levels such as Good, Moderate, Unhealthy, Hazardous, and Very Unhealthy.
+- **Country-wise Analysis**: A country-based AQI distribution showing pollution levels globally.
+- **Interactive Dashboard**: The dashboard is designed to provide an interactive and insightful view of air quality levels across the world.
 
-## Problem Solved
-Global air quality is a significant concern, and this project offers a solution to:
-- **Track Air Quality**: By visualizing AQI levels across countries, the dashboard helps users understand pollution trends and their environmental impacts.
-- **Actionable Insights**: The ability to filter data by AQI categories and countries provides detailed insights into pollution levels, helping decision-makers make informed choices.
-- **Cloud Integration**: Using Azure for backend data processing allows for secure and scalable management of large datasets, ensuring real-time updates and access to stakeholders.
+## Features of the Dashboard
 
-## What Was Done in Azure
-1. **Data Storage**: The AQI dataset is stored in **Azure SQL Database**. Azure ensures that the data is secure, easily accessible, and scalable as the dataset grows.
-2. **Data Integration**: Azure was used for preprocessing the data to make it ready for analysis in Power BI. This included tasks such as data cleaning, categorization, and aggregation.
-3. **Real-Time Data Access**: Azure ensures seamless access to updated AQI data for Power BI, enabling the dashboard to show the most up-to-date information.
-4. **Scalable Cloud Solution**: With Azure, the solution is designed to scale efficiently to handle larger datasets and more complex queries as the project expands.
+1. **Pollution Categories by Country**: A bar chart that displays the number of countries within each AQI category.
+2. **Average AQI by Category**: A donut chart that shows the average AQI value within each category, highlighting how countries are distributed across different pollution levels.
+3. **Regional Insights**: A map that provides a geographic breakdown of PM2.5 AQI levels across different regions.
+4. **AQI Trends**: A line chart visualizing the AQI values over time across different countries.
 
-## Insights and Solution
-- **Pollution Hotspots**: By analyzing AQI data by country, this dashboard identifies regions with the highest levels of pollution, allowing organizations and governments to target interventions more effectively.
-- **Regional Comparison**: Users can compare AQI levels across different regions, helping to identify areas where pollution control efforts are working and where improvements are needed.
-- **Public Awareness**: By presenting the data in an interactive format, the dashboard makes it easier for the public to understand the impact of pollution on their health and environment, fostering a proactive approach to air quality improvement.
+## How to Run
 
-## Dataset Access
-The dataset used in this project can be accessed through the following link:
+1. Download the dataset from the link above or access it directly through Azure.
+2. Open **Power BI Desktop**.
+3. Import the dataset into Power BI using **Get Data** from Azure.
+4. Build the dashboard as per the insights described.
+5. Save and publish the report to Power BI service for online access.
 
-- [Download AQI Dataset](https://tejasalesdata.blob.core.windows.net/rawdata/global%20air%20pollution%20dataset.csv)
+## Conclusion
 
-> **Note**: The dataset is hosted on **Azure Blob Storage** for ease of access and large file handling.
+This project provides an insightful and interactive analysis of global air quality data, leveraging both **Power BI** and **Azure** services. By combining these technologies, the dashboard offers a comprehensive view of AQI distribution across the globe, making it easier for individuals, organizations, and governments to understand and act on environmental issues.
 
-## How to Run the Report
-1. Open the `.pbix` file in **Power BI Desktop**.
-2. Ensure that the Azure backend is connected to Power BI for real-time data access.
-3. Explore the interactive visuals for pollution insights by using the slicers.
+---
 
-## How to Contribute
-- **Suggestions**: If you have suggestions for improving this project, feel free to open an issue or contribute via a pull request.
-- **Bug Reports**: If you encounter any issues while using the dashboard or accessing data, please report them via the Issues section.
-
-## Credits
-- **Data Source**: The AQI data used in this project comes from global air quality monitoring systems such as the **World Air Quality Index** and other environmental agencies.
-- **Power BI**: Used for creating interactive dashboards.
-- **Azure**: Backend infrastructure for data storage and processing.
-
-## License
-This project is open-source. Feel free to fork or modify it as needed.
+Feel free to clone the repository, explore the data, and interact with the dashboard!
 
 ## Contact
-- **LinkedIn**: [Krishna Teja Reddy Kotla](https://www.linkedin.com/in/krishnatejakotla)
-- **Email**: [krishnatejareddy.kotla@gmail.com]
+
+- **LinkedIn**: [Krishna Teja Reddy Kotla](https://www.linkedin.com/in/krishnatejakotla/)
+- **Email**: [krishnatejareddy.kotla@gmail.com](mailto:krishnatejareddy.kotla@gmail.com)
